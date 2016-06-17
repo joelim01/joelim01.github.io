@@ -4,14 +4,14 @@ title:  "CLI Data Gem - Boutique Hotel Edition"
 date:   2016-06-16 21:15:41 -0400
 ---
 
-> In this lesson you're going to build a RubyGem that provides a CLI interface to an external data source. Your code will be packaged as a RubyGem and install a CLI for the user. The CLI will be composed of an Objected Oriented Ruby application.
-> 
-> REQUIREMENTS  
-> Package as a gem  
-> Provide a CLI on gem installation.  
-> CLI must provide data from an external source, whether scraped or via a public API.  
-> Data provided must go at least a level deep, generally by showing the user a list of available data and then being able to drill into a specific item.  
-> 
+In this lesson you're going to build a RubyGem that provides a CLI interface to an external data source. Your code will be packaged as a RubyGem and install a CLI for the user. The CLI will be composed of an Objected Oriented Ruby application.
+ 
+REQUIREMENTS  
+Package as a gem  
+Provide a CLI on gem installation.  
+CLI must provide data from an external source, whether scraped or via a public API.  
+Data provided must go at least a level deep, generally by showing the user a list of available data and then being able to drill into a specific item.  
+ 
 Let’s just get right down to the nitty-gritty of this little gem, shall we? I’m going to ask myself four questions. 
 
 *What did I do?*  
