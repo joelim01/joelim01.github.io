@@ -14,10 +14,10 @@ date:   2016-06-16 21:15:41 -0400
 
 Let’s just get right down to the nitty-gritty of this little gem, shall we? I’m going to ask myself four questions. 
 
-*What did I do? 
-What should I keep doing?
-What should I start doing?
-What should I stop doing?*
+*What did I do?*
+*What should I keep doing?*
+*What should I start doing?*
+*What should I stop doing?*
 
 Personally I find the first hardest to answer, which is why I already have an item under the Start heading. Start documenting during production. This is a lesson I’ve already learned, just a new context. Anyway…
 
