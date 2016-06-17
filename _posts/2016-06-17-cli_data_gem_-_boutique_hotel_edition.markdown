@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CLI Data Gem - Boutique Hotel Edition"
-date:   2016-06-17 01:15:41 +0000
+date:   2016-06-16 21:15:41 -0400
 ---
 
 > In this lesson you're going to build a RubyGem that provides a CLI interface to an external data source. Your code will be packaged as a RubyGem and install a CLI for the user. The CLI will be composed of an Objected Oriented Ruby application.
@@ -22,8 +22,8 @@ What should I stop doing?*
 Personally I find the first hardest to answer, which is why I already have an item under the Start heading. Start documenting during production. This is a lesson I’ve already learned, just a new context. Anyway…
 
 **What did I do?
-Tl;dr: Just read the bold.
-**
+Tl;dr: Just read the bold.**
+
 I looked at the example and code to try to understand what’s what.
 I read through the rubygems guide, understanding maybe 50%.
 I didn’t fully understand how to make a gem before starting, but I took educated guess that fully understanding wasn’t a prerequisite to getting started.
