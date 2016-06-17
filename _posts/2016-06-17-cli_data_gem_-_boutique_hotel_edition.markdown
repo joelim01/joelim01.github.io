@@ -21,8 +21,8 @@ Let’s just get right down to the nitty-gritty of this little gem, shall we? I�
 
 Personally I find the first hardest to answer, which is why I already have an item under the Start heading. Start documenting during production. This is a lesson I’ve already learned, just a new context. Anyway…
 
-What did I do?  
-Tl;dr: Just read the bold.
+**What did I do?**  
+**Tl;dr: Just read the bold.**
 
 I looked at the example and code to try to understand what’s what.  
 I read through the rubygems guide, understanding maybe 50%.  
@@ -42,7 +42,7 @@ I didn’t fully understand how to make a gem before starting, but I took educat
    
 **I sketched the Category and Hotel objects** by scraping the site with nokogiri to find out what information was available and consistent enough to be meaningful.  
 Then I got the Category and Hotel objects fully fleshed out so the scraper populated them with data, and assigned them to one another (after a momentary lapse when I was just assigning the names and not the objects)  
-**From there it was CLI logic, styling, word wrapping. **This got pretty messy rather quickly.  
+**From there it was CLI logic, styling, word wrapping.** This got pretty messy rather quickly.  
 **And gemifying!**  I’m not going to talk about my technical problems while building the gem. I’m still recovering. But I do feel way more confident about making gems now, so there is that.
 
 Phew, if you’re still here, hold on, just a little more…
