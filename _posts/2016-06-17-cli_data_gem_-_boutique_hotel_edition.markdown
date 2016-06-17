@@ -6,7 +6,7 @@ date:   2016-06-16 21:15:41 -0400
 
 > In this lesson you're going to build a RubyGem that provides a CLI interface to an external data source. Your code will be packaged as a RubyGem and install a CLI for the user. The CLI will be composed of an Objected Oriented Ruby application.
 > 
-> REQUIREMENTS  
+> REQUIREMENTS
 > Package as a gem
 > Provide a CLI on gem installation.
 > CLI must provide data from an external source, whether scraped or via a public API.
@@ -29,7 +29,7 @@ I read through the rubygems guide, understanding maybe 50%.
 I didn’t fully understand how to make a gem before starting, but I took educated guess that fully understanding wasn’t a prerequisite to getting started.
 **I fumbled a bit on what data set to choose** (originally I had thought alternate side parking rules). I spent some time researching what was available (did you know you can get info via an app, an email list, a twitter account, and a mailing list in addition to 311?) only to find that the data set was flat. Just dates and associated holidays/events. Not sure what I was expecting…**but I didn’t dwell on it.** 
 **I chose a dataset with a good structure.** It had 60+ items, it had multiple layers (categories and details). The categories provided a smart way to divide up the long list of items and serve them to the user without unnaturally paginating the results.
-  **…and inconsistent data.** A lot of fields were occasionally empty or missing altogether when parsing the site with nokogiri. C’est la guerre.
+**…and inconsistent data.** A lot of fields were occasionally empty or missing altogether when parsing the site with nokogiri. C’est la guerre.
 **I tried to make a loose narrative out of the program:**
 *   Scrape the site for categories -> Category Objects
 *   Scrape the site for hotels in each category -> Hotel Objects
