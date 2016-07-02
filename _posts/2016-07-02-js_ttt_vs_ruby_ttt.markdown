@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JS TTT vs Ruby TTT"
-date:   2016-07-02 23:07:56 +0000
+date:   2016-07-02 19:07:56 -0400
 ---
 
 
@@ -14,5 +14,3 @@ We ended up spending almost an hour going through the code, refactoring, editing
 For me, after being in Ruby land with clear objects and associated reader/writer functions (attr_accessor, you're the tops), I was feeling a little untethered. I mean you don't just want to go wild and assign 20 global variables, do you?! That seemed a little crazy.
 
 It took a while, and it seems obvious now, but in the case of this particular Tic Tac Toe game, we had to stop thinking about storing the data in JS variables to manipulate it and to populate the DOM. Once we started thinking about the page as the source of truth it became clear that the HTML elements, attribues and values were our data store, we just had to write the code that could write them and read them.
-
-Suddenly the connection between the HTML page and a 
