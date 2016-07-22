@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sinatra Dinner Party"
-date:   2016-07-22 19:01:32 +0000
+date:   2016-07-22 15:01:32 -0400
 ---
 
 *Basic stuff...*
@@ -34,15 +34,15 @@ Logged in users can leave comments about dinners and dishes. Users can edit thei
 
 This resulting in the following ActiveRecord associations:
 
-class User < ActiveRecord::Base
-...
+class User < ActiveRecord::Base  
+...  
   has_many :comments
   has_many :reservations
   has_many :dinner_dishes
   has_many :dinners, through: :reservations
   has_many :dishes, through: :dinners
-....
-end
+....  
+end  
 
 class Reservation < ActiveRecord::Base
   belongs_to :user
