@@ -34,6 +34,7 @@ Logged in users can leave comments about dinners and dishes. Users can edit thei
 
 This resulting in the following ActiveRecord associations:
 
+```ruby
 class User < ActiveRecord::Base  
 ...  
   has_many :comments
@@ -67,6 +68,7 @@ class Comment < ActiveRecord::Base
   belongs_to :dinner
   belongs_to :dish
 end
+```
 
 At this point, mission is accomplished. What do I need next? An admin user role would be fantastic, with the ability to create dinners and dishes and associate dinners and dishes. Right now this is accomplished via terminal, which is super clunky. Also, a dashboard to manage the number of slots per dinner is a pretty big item. Right now we could potentially be hosting a horde and that doesn't sound fun or feasible.
 
