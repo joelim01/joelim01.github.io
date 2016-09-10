@@ -43,8 +43,8 @@ While this is a far better solution, what happens when we start nesting partials
 *"So what's the last option?"* So glad you asked!
 
 3. Rails is magical. Template Inheritance is pretty cool. From the rubyonrails.org guide: 
-> > Layout declarations cascade downward in the hierarchy, and more specific layout declarations always override more general ones. Similar to the Layout Inheritance logic, if a template or partial is not found in the conventional path, the controller will look for a template or partial to render in its inheritance chain.
-> > 
+
+> Layout declarations cascade downward in the hierarchy, and more specific layout declarations always override more general ones. Similar to the Layout Inheritance logic, if a template or partial is not found in the conventional path, the controller will look for a template or partial to render in its inheritance chain.
 
 Which means that you can let Rails handle at least some of the logic for you. 
 
