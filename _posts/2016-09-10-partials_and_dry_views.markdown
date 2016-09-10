@@ -46,15 +46,19 @@ While this is a far better solution, what happens when we start nesting partials
 > Layout declarations cascade downward in the hierarchy, and more specific layout declarations always override more general ones. Similar to the Layout Inheritance logic, if a template or partial is not found in the conventional path, the controller will look for a template or partial to render in its inheritance chain.
 > 
 
-Which means that you can let Rails handle at least some of the logic for you. Take a look at this revised file and folder structure for the example from above...
+Which means that you can let Rails handle at least some of the logic for you. 
 
-![](https://dl.dropboxusercontent.com/u/455813290/Blog%20Images/9-10-16/Screen%20Shot%202016-09-10%20at%202.44.07%20PM.png)
+Let's say we break out our actions into a separate partial called 'dinner_actions'. Let's also say that we divide up our actions according to the controller they'll serve. So in the previous example, the dinner/index dinner actions stay with the dinner/index.html file, and the reservations/index dinner actions stay with the reservations/index.html file. (If this is confusing, and it can be, look at the tree below):
 
-Let's say we break out our actions into a separate partial called 'dinner_actions'. Let's also say that we divide up our actions according to the controller they'll serve. So in the previous example, the dinner/index dinner actions stay with the dinner/index.html file, and the reservations/index dinner actions stay with the reservations/index.html file. (If this is confusing, and it can be, look at the tree below)
+![](https://dl.dropboxusercontent.com/u/455813290/Blog%20Images/9-10-16/Screen%20Shot%202016-09-10%20at%203.08.12%20PM.png)
 
-We call our 'shared/dinners/dinners' partial from 'dinners/index' and 'reservations/index' as we would in the first example, but instead of packing all our logic into this controller, we instead include a a render call for a partial 'dinner_actions' (notice there is no leading directory structure). Rails will look inside of 'shared/dinners' (the location of the partial folder), not find a matching partial, and then fall back one step in the heirarchy. This one step back is determined by the file calling the partial (so either 'dinners/' or 'reservations/') which means that we automagically don't have to worry about writing any logic related to which view the partial is in. It will call the correct 'dinner_actions' just by 'failing' back a level in the search path.
+Step (1) We call our 'shared/dinners/dinners' partial from 'dinners/index' or 'reservations/index' as we would in the first example, but instead of packing all our logic into this controller, we instead include a call to render our dinner_actions partial:
 
-Which I think is pretty nifty... don't you?
+`render partial: 'dinners_actions', locals: {dinners: dinners}`
+
+Notice there is no leading directory structure and that we need to pass our collection or local value from our first partial to the second.  Step (2) Rails will look inside of 'shared/dinners' (the location of the partial folder), not find a matching partial, and then fall back one step in the heirarchy. This one step back is determined by the file calling the partial (so either 'dinners/' or 'reservations/') which means that we automagically don't have to worry about writing any logic related to which view the partial is in. Step (3) Rails will call the correct 'dinner_actions' just by 'failing' back a level in the search path.
+
+Which I think is pretty nifty... don't you think?
 
 
 
