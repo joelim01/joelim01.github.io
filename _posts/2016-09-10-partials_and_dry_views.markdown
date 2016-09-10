@@ -47,6 +47,7 @@ While this is a far better solution, what happens when we start nesting partials
 > 
 
 Which means that you can let Rails handle at least some of the logic for you. Take a look at this revised file and folder structure for the example from above...
+
 ![](https://dl.dropboxusercontent.com/u/455813290/Blog%20Images/9-10-16/Screen%20Shot%202016-09-10%20at%202.44.07%20PM.png)
 
 Let's say we break out our actions into a separate partial called 'dinner_actions'. Let's also say that we divide up our actions according to the controller they'll serve. So in the previous example, the dinner/index dinner actions stay with the dinner/index.html file, and the reservations/index dinner actions stay with the reservations/index.html file. (If this is confusing, and it can be, look at the tree below)
