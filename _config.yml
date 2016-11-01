@@ -1,5 +1,5 @@
 # Site settings
-title: self.new
+title: new self();
 header-img: img/home-bg.png
 email: joseph.d.lim@gmail.com
 copyright_name: joelim01
