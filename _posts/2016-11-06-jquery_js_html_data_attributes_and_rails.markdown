@@ -42,6 +42,8 @@ Next you just need to attach your function...
 
 ![Far more satisfying](https://dl.dropboxusercontent.com/u/455813290/Blog%20Images/11-6-2016/Screen%20Shot%202016-11-06%20at%203.09.54%20PM.png)
 
+Just use the javascript `[ ]` syntax to access the attributes of your `a` tag and apply the click handler to everything that has a `dinnId`.
+
 That's a lot more satisfying, isn't it?
 
  
