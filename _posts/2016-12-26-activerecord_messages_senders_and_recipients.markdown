@@ -53,7 +53,7 @@ The double join table between users (message_sender and message_recipients) allo
     t.datetime "received_on"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.boolean  "read"
+    t.boolean  "read"  
 		t.boolean  "display"
   end
 
@@ -61,8 +61,8 @@ The double join table between users (message_sender and message_recipients) allo
     t.integer  "message_id"
     t.integer  "sender_id"
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-		t.boolean  "read"
+    t.datetime "updated_at", null: false  
+		t.boolean  "read"  
 		t.boolean  "display"
   end
 ```
