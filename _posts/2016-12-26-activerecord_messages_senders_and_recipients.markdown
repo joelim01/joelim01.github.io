@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ActiveRecord Messages, Senders, and Recipients"
-date:   2016-12-26 22:34:17 +0000
+date:   2016-12-26 17:34:18 -0500
 ---
 
 
@@ -44,4 +44,28 @@ end
 
 ```
 
+The double join table between users (message_sender and message_recipients) allows for the creation of an attribute in the table that remembers whether or not a sender or recipient has deleted the message from their view. This allows for the control of the view without deleting the message (and its content) or the join table entries (which contain important information about the message and its senders/recipients) to preserve the integrity of the information for other users.
+
+```
+  create_table "message_recipients", force: :cascade do |t|
+    t.integer  "message_id"
+    t.integer  "recipient_id"
+    t.datetime "received_on"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.boolean  "read"
+		t.boolean  "display"
+  end
+
+  create_table "message_senders", force: :cascade do |t|
+    t.integer  "message_id"
+    t.integer  "sender_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+		t.boolean  "read"
+		t.boolean  "display"
+  end
+```
+
+The other thing worth noting here is the use of class_name: in the Message model to allow for Users to be both a sender and a recipient and to simplify the language of queries for instance, Message.find(_id_).sender. 
 
