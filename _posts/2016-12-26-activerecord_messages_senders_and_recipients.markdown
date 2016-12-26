@@ -52,9 +52,9 @@ The double join table between users (message_sender and message_recipients) allo
     t.integer  "recipient_id"
     t.datetime "received_on"
     t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.boolean  "read"  
-		t.boolean  "display"
+    t.datetime "updated_at",   null: false  
+		t.boolean  "read"  
+    t.boolean  "display"
   end
 
   create_table "message_senders", force: :cascade do |t|
