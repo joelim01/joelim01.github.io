@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "From the edge of the world to character islands pt1"
-date:   2017-01-21 23:27:43 +0000
+date:   2017-01-21 18:27:44 -0500
 ---
 
 
@@ -62,6 +62,7 @@ answer.uniq
 ```
 
 I could do the same thing in a much more terse style (which I do not prefer for readability's sake):
+
 ```
 # put all the indicies of the string into an array
 # make an array of all possible combinations of elements
@@ -72,7 +73,6 @@ I could do the same thing in a much more terse style (which I do not prefer for 
 
 indices = (0...s.length).to_a
 s_array = indices.product(indices).reject{|i,j| i > j}.map{|i,j| s[i..j]}.uniq
-
 ```
 
 Then I'll need to take those substrings and march through the given string to locate all of the islands.
