@@ -15,7 +15,7 @@ I've been working through lots, from JS scopes and inheritance to data structure
 
 That's between meetups, reaching out to people in the tech community, coding my new personal site [www.sayhellojoe.com](http://www.sayhellojoe.com) and work. Its exciting and a little bit daunting.
 
-I want to talk a little bit about a code challenge from [www.hackerank.com](www.hackerrank.com) that I am working on. I didn't immediately see that it is in the 'expert' category. I know you might be scoffing right now, but when I tell you that out of the 686 people who have tried it only 146 have nailed it, which is a far cry from the 85-95% completion for medium and easy questions, you should believe me that it is no picnic.
+I want to talk a little bit about a code challenge from [www.hackerank.com](http://www.hackerrank.com) that I am working on. I didn't immediately see that it is in the 'expert' category. I know you might be scoffing right now, but when I tell you that out of the 686 people who have tried it only 146 have nailed it, which is a far cry from the 85-95% completion for medium and easy questions, you should believe me that it is no picnic.
 
 I used to ask myself how you could objectively measure if one coding solution was better than another. I could think about readability, comprehensibility, ease of deployment (which all seem pretty subjective to me) but after getting some exposure to big O notation and having to work through some problems on hackerrank that would fail if the solution wasn't efficient enough, I have a new appreciation for the objectivity of resource intensiveness. 
 
