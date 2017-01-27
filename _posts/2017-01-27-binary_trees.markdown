@@ -52,7 +52,7 @@ def findVal(val, array)
 end
 ```
 
-One coding challenge I recently had to complete required determining if a tree was a Binary Search Tree (a sorted tree (meeting the requirement where left child nodes are less than parent nodes and right nodes are greater than parent nodes) where ALL values to the right of the root node are greater than the root node and ALL values to the left of the root node ares less.
+One coding challenge I recently had to complete required determining if a tree was a Binary Search Tree. BSTs are a sorted tree (meeting the requirement where left child nodes are less than parent nodes and right nodes are greater than parent nodes) where ALL values to the right of the root node are greater than the root node and ALL values to the left of the root node ares less.
 
 That's a mouthful. Here is an example of a sorted but non-BST tree...
 
