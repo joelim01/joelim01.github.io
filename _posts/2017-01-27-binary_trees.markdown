@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Binary Trees"
-date:   2017-01-27 18:33:53 +0000
+date:   2017-01-27 13:33:55 -0500
 ---
 
 Data structure!
@@ -10,7 +10,7 @@ This week while brushing up on CS concepts I learned about a new data structure.
 
 Your vanilla Binary Tree has some properties that define it.
 
-1) The Binary Tree is composed of nodes. Each node has a value and points to a left and right node.
+1) The Binary Tree is composed of nodes. Each node has a value and points to at most two other nodes, a left and right node. It can point to 1 or 0 nodes as well.
 
 So, something like this:
 
@@ -22,8 +22,8 @@ looks a bit like this:
 
 <img src="https://dl.dropboxusercontent.com/u/455813290/Blog%20Images/1-27-17/BinaryTree.png" alt="BinaryTree" style="width: 300px;"/>
 
-1) There is a single head node, called the root.
-2) This tree is unsorted.
+2) There is a single head node, called the root.  
+*This tree is unsorted.*
 
 Once you sort the tree, things get a little more interesting. Here's a sorted and balanced tree:
 
@@ -33,7 +33,10 @@ root = { value: 6, left: {value: 4, left: {value: 3, left: nil, right: nil}, rig
 
 <img src="https://dl.dropboxusercontent.com/u/455813290/Blog%20Images/1-27-17/BalancedSortedBinary.png" alt="BinaryTree" style="width: 300px;"/>
 
-The rules here are that each node may have 2 child nodes. Values less than the root value are placed to the left and values greater than root are placed on the right.
+The rules here:  
+1) Each node may have 0,1 or 2 child nodes. 
+2) Nodes with values less than the root value are placed to the left and values greater than root are placed on the right.
+3) Balance is maintained by keeping the height of the tree (the depth of the leaves) within the same level, or no more than 1 index apart. 
 
 As you might imagine, this speeds up searching for values in the sorted tree over a brute force sequential array search ie:
 
