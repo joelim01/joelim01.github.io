@@ -34,9 +34,9 @@ root = { value: 6, left: {value: 4, left: {value: 3, left: nil, right: nil}, rig
 <img src="https://dl.dropboxusercontent.com/u/455813290/Blog%20Images/1-27-17/BalancedSortedBinary.png" alt="BinaryTree" style="width: 300px;"/>
 
 The rules here:  
-1) Each node may have 0,1 or 2 child nodes. 
-2) Nodes with values less than the root value are placed to the left and values greater than root are placed on the right.
-3) Balance is maintained by keeping the height of the tree (the depth of the leaves) within the same level, or no more than 1 index apart. 
+1) Each node may have 0,1 or 2 child nodes.  
+2) Nodes with values less than the root value are placed to the left and values greater than root are placed on the right.  
+3) Balance is maintained by keeping the height of the tree (the depth of the leaves) within the same level, or no more than 1 level apart. 
 
 As you might imagine, this speeds up searching for values in the sorted tree over a brute force sequential array search ie:
 
