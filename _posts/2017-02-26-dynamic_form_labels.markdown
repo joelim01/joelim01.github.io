@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dynamic Form Labels"
-date:   2017-02-26 15:30:38 +0000
+date:   2017-02-26 10:30:39 -0500
 ---
 
 
@@ -26,7 +26,7 @@ person = {name: "Margaret", least_favorite_thing: "squeeky doors", favorite_band
 person_labels = {name: "Name", least_favorite_thing: "Pet Peeve", favorite_band: "Rocks Out To"}
 ```
 
-Then we'd need to associate the person_fields with the group that they belong to, and make sure that whenever a person who belongs to that group is looking at the form, they see the custom labels.
+Then we'd need to associate the person_labels with the group that they belong to, and make sure that whenever a person who belongs to that group is looking at the form, they see the custom labels.
 
 It might not be the most elegant solution, but it seems like it will work and that it can be used in multiple front end contexts, which is the current goal.
 
